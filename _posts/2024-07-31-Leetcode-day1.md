@@ -63,7 +63,9 @@ class Solution {
 - [Leetcode 34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 - [Leetcode 69. Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
 - [Leetcode 367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/description/)
+
 ---------------------------------------------------------------------------------------------------------------
+
 ## 27. Remove Element
 
 **LeetCode Problem:** [Remove Element](https://leetcode.com/problems/remove-element/description/)
