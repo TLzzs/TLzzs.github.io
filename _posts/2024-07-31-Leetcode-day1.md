@@ -1,23 +1,22 @@
 ---
-title: "Leetcode Day1 | 704. Binary Search、27. Remove Element、 977. Squares of a Sorted Array "
+title: "Leetcode Day 1 | 704. Binary Search、27. Remove Element"
 date: 2024-07-31 00:00:00
 categories: [Leetcode, Array]
-tags: [Array]
+tags: [Array, Double Pointers, Binary Search]
 ---
 ## 704. Binary Search
 
-**LeetCode Problem:** [Binary Search](https://leetcode.com/problems/binary-search)
+**LeetCode Problem:** [704. Binary Search](https://leetcode.com/problems/binary-search)
 
-### <u>Ways of Thinking</u>
+### <u>Thinking Process</u>
 
 In this approach, we use the two-pointer method with pointers `[left, right]`, where `left` represents the starting index and `right` represents the ending index of the current search range.
-
-#### _Loop Condition_: 
+#### _Loop Condition:_ 
 - We continue the search with the condition `while (left <= right)`, which ensures that the search space is not exhausted.
 
 #### _Conditions Within the Loop:_ 
-- **If the target is greater than `nums[mid]`**: Adjust the search range to the right half by setting `left` to `mid + 1`.
-- **If the target is less than `nums[mid]`**: Adjust the search range to the left half by setting `right` to `mid - 1`.
+- **If the target is greater than `nums[mid]`**: Adjust search range to the right half by setting `left` to `mid + 1`.
+- **If the target is less than `nums[mid]`**: Adjust search range to the left half by setting `right` to `mid - 1`.
 
 #### _Termination:_
 - The loop terminates early if the target number equals `nums[mid]`, meaning the target has been found.
@@ -68,15 +67,16 @@ class Solution {
 
 ## 27. Remove Element
 
-**LeetCode Problem:** [Remove Element](https://leetcode.com/problems/remove-element/description/)
+**LeetCode Problem:** [27. Remove Element](https://leetcode.com/problems/remove-element/description/)
 
-### <u>Ways of Thinking</u>
+### <u>Thinking Process</u>
 
 In this approach, we use the two-pointer method with pointers `[left, right]`, where `left` represents the starting index and `right` represents the ending index of the current search range.
 - left pointer is the current first element that equals to target
 - right pointer is the current last element that not equals to target
 - everytime we need to swap left and right element , and then update left and right pointers
-#### _Loop Condition_:
+
+#### _Loop Condition:_
 - We continue the search with the condition `while (left <= right)`, which ensures that the search space is not exhausted.
 
 #### _Inside the loop, update the pointers to expect position:_
