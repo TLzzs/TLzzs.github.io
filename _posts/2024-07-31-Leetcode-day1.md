@@ -8,14 +8,18 @@ tags: [Array]
 
 **LeetCode Problem:** [View Problem](https://leetcode.com/problems/binary-search)
 
-## Introduction
-Binary search is a highly efficient method for finding an element in a sorted array. This algorithm reduces the problem size by half with each step, rapidly narrowing down the possible locations of the target value.
-
 ## Ways of Thinking
-To solve the binary search problem, understanding the following key concepts is crucial:
-- **Divide and Conquer**: This strategy involves dividing the data set into smaller chunks and solving them independently.
-- **Midpoint Calculation**: Careful calculation of the midpoint is essential to avoid integer overflow and to accurately split the search range.
-- **Conditional Logic**: Decisions to adjust the search range based on comparison results between the target and the current middle value.
+In this approach, we use the two-pointer method with pointers `[left, right]`, where `left` represents the starting index and `right` represents the ending index of the current search range.
+
+### Loop Condition
+We continue the search with the condition `while (left <= right)`, which ensures that the search space is not exhausted.
+
+### Conditions Within the Loop
+- **If the target is greater than `nums[mid]`**: Adjust the search range to the right half by setting `left` to `mid + 1`.
+- **If the target is less than `nums[mid]`**: Adjust the search range to the left half by setting `right` to `mid - 1`.
+
+### Termination
+The loop terminates early if the target number equals `nums[mid]`, meaning the target has been found.
 
 ## Solution
 Here's the Java implementation of the binary search algorithm:
