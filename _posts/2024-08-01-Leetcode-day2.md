@@ -65,3 +65,76 @@ class Solution {
 
 ### <u>Related Question List</u>
 - [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/description/)
+
+
+## 59. Spiral Matrix II
+**LeetCode Problem:** [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/description/?envType=problem-list-v2&envId=mgmdbgjt)
+
+
+### <u>Thinking Process</u>
+simulating the clockwise drawing of a matrix:
+
+- Fill the top row from left to right
+- Fill the right column from top to bottom
+- Fill the bottom row from right to left
+- Fill the left column from bottom to top
+- 
+**Continue this pattern from the outside in, circling inward.**
+
+
+#### _Initialise:_ 
+- `int[][] ans = new int[n][n];`: This initializes an n x n matrix filled with zeros.
+- `int circle = 0;`: represents the current layer or level of the spiral being filled. Starting from the outermost layer and moving inward.
+- `int cur = 0;`: This variable tracks the current number to be placed in the matrix. It starts from 0 and increments as we fill the matrix.
+
+
+#### _Loop Condition:_ 
+The loop continues `while cur < n*n`, meaning until all elements of the matrix are filled.
+
+#### _Conditions Within the Loop:_ 
+- **Top Row Iterate Fill:**
+- **Right Row Iterate Fill:**
+- **Bottom Row Iterate Fill:**
+- **Left Row Iterate Fill:**
+
+### <u> Solution </u>
+
+Here's the Java implementation of the binary search algorithm:
+
+```java
+class Solution {
+    public int[][] generateMatrix(int n) {
+        int[][] ans = new int[n][n];
+        int circle = 0, cur = 1;
+        while (cur < n*n) {
+            //top
+            for (int i = circle; i<= n-1-circle && cur < n*n; i++){
+                ans[circle][i] = ++cur;
+            }
+            //right
+            for (int j = circle + 1; j <= n-1-circle && cur < n*n ; j++) {
+                ans[j][n-1-circle]= ++cur;
+            }
+            
+            //bottom
+            for (int k = n-2-circle; k >= circle && cur < n*n; k--) {
+                ans[n-1-circle][k] = ++cur;
+            }
+            
+            //left
+            for (int l = n-2-circle; l >= circle+1 && cur < n*n; l--) {
+                ans[l][circle] = ++cur;
+            }
+            
+            circle++;
+        }
+        return ans;
+    }
+}
+```
+
+#### _Time Complexity_
+- **Best Case == Average Case == Worst Case**: O(n^2), since we have to simulate the matrix
+
+#### _Space Complexity_
+- **O(1)**: The space complexity is constant as the algorithm uses a fixed amount of space regardless of the input array size.
