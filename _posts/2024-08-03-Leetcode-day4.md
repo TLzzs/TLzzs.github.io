@@ -288,7 +288,7 @@ public class Solution {
 }
 ```
 
-#### _Time Complexity_
+#### _Time Complexity_ 
   - The algorithm consists of two main phases:
     1. Determining if a cycle exists by moving `fast` and `slow` pointers through the list. This phase takes <u>**O(n)**</u> time, where `n` is the number of nodes in the list.
     2. Finding the cycle entrance by moving both pointers one step at a time until they meet. This phase also takes <u>**O(n)**</u> time in the worst case.
