@@ -1,8 +1,8 @@
 ---
 title: "Leetcode Day 5 | 242. Valid Anagram、 349. Intersection of Two Arrays、 202. Happy Number、 1. Two Sum"
 date: 2024-08-05 00:00:00
-categories: [Leetcode, LinkedList]
-tags: [LinkedList]
+categories: [Leetcode, Hashset, HashMap]
+tags: [HashSet, HashMap]
 ---
 ## 242. Valid Anagram
 **LeetCode Problem:** [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
