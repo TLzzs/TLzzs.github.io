@@ -125,6 +125,11 @@ public class Customer {
     private String email;
 }
 ```
+
+**Explanation:**
+The Customer class is an entity representing a customer in the database. It uses Lombok annotations to generate 
+boilerplate code like getters, setters, and constructors. The @Entity annotation marks it as a JPA entity. The @Id,
+@SequenceGenerator, and @GeneratedValue annotations define the primary key generation strategy using a sequence.
 ### Define Repository 
 ```java
 @Repository
@@ -132,6 +137,10 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
   // A Customer Repository
 }
 ```
+**Explanation**:
+The CustomerRepository interface extends JpaRepository, providing CRUD operations for the Customer entity.
+The @Repository annotation indicates that it's a Spring Data repository.
+
 
 ### Define Dto of incoming Request
 ```java
@@ -141,6 +150,9 @@ public record CustomerRegistrationRequest(
         String email) {
 }
 ```
+**Explanation**:
+The CustomerRegistrationRequest record represents the data transfer object (DTO) for customer registration requests.
+It encapsulates the first name, last name, and email of the customer.
 
 ### Define Controller
 ```java
@@ -156,6 +168,11 @@ public record CustomerController(CustomerService customerService) {
     }
 }
 ```
+**Explanation:**
+The CustomerController class handles HTTP requests related to customer operations. It's annotated with @RestController
+to indicate that it's a REST controller. The @RequestMapping("api/v1/customers") annotation maps HTTP requests to 
+/api/v1/customers. The registerCustomer method handles POST requests for customer registration, logging the request and 
+delegating the processing to the CustomerService.
 
 ### Define Service
 ```java
@@ -174,3 +191,7 @@ public record CustomerService(CustomerRepository customerRepository) {
     }
 }
 ```
+**Explanation:**
+The CustomerService class contains the business logic for customer operations. It's annotated with @Service to indicate
+that it's a service component. The registerCustomer method takes a CustomerRegistrationRequest, constructs a Customer 
+entity, and saves it to the repository. The method includes TODO comments for checking if the email is valid and not already taken.
