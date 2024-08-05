@@ -71,7 +71,7 @@ class Solution {
 
 
 ## 349. Intersection of Two Arrays
-**LeetCode Problem:** [349. Intersection of Two Arrays](**https://leetcode.com/problems/intersection-of-two-arrays/description/?envType=problem-list-v2&envId=m1hcfiks**)
+**LeetCode Problem:** [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/description/?envType=problem-list-v2&envId=m1hcfiks)
 
 
 ### <u>Thinking Process</u>
