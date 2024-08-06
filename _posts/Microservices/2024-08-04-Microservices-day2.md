@@ -9,13 +9,13 @@ tags: [Microservices]
 I will build a Fraud Service, it provides an api, where client can use this api to confirm if a customer is a fraudulent or not 
 The Api will accept a incoming variable customerId and return a type of FraudCheckResponse
 
-### define a Dto of FraudCheckResponse
+### Define a Dto Of FraudCheckResponse
 ```java
 public record FraudCheckResponse (Boolean isFraudster) {
 }
 ```
 
-### define an entity of FraudCheckHistory 
+### Define an entity of FraudCheckHistory 
 ```java
 @Data
 @Builder
@@ -40,14 +40,14 @@ public class FraudCheckHistory {
 }
 ```
 
-### define a repository of FraudCheckHistory
+### Define a Repository of FraudCheckHistory
 ```java
 public interface FraudCheckHistoryRepository
         extends JpaRepository<FraudCheckHistory, Integer> {
 }
 ```
 
-### define a Controller 
+### Define a Controller 
 ```java
 @RestController
 @RequestMapping("api/v1/fraud-check")
@@ -70,7 +70,7 @@ public class FraudController {
 ```
 
 
-### define Service Layer
+### Define Service Layer
 ```java
 @Service
 @AllArgsConstructor
