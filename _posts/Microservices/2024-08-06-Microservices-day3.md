@@ -29,7 +29,10 @@ Eureka Server for service management in this example.
    - Client-side Load Balancing: When a service requests another service, Eureka can provide multiple instances of the 
      requested service. The client (with the help of a load balancer like Ribbon) can distribute requests across these 
      instances, balancing the load.
-
+<div style="display: flex; justify-content: space-between;">
+    <img width="874" alt="Screenshot 2024-08-06 at 16 47 24" src="https://github.com/user-attachments/assets/9decafb0-3d65-4f9a-87bd-bf72e78e5405" style="width: 45%; margin-right: 10px;">
+    <img width="1123" alt="Screenshot 2024-08-06 at 16 47 57" src="https://github.com/user-attachments/assets/982e82fe-9704-4d58-98af-df86afd9d8b4" style="width: 50%;">
+</div>
 ### Add Spring Cloud dependencies
 Since Eureka is part of Spring Cloud, we need to include the relevant dependencies in each project.
 Use the `DependencyManagement` section to manage the versions.
