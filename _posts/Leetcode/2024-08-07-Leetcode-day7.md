@@ -84,8 +84,6 @@ Since the algorithm only uses a fixed amount of extra space regardless of the in
 Given a string `s` and an integer `k`, reverse the first `k` characters for every `2k` characters counting from the start of the string.
 
 - If there are fewer than `k` characters left, reverse all of them.
-- If there are at least `k` but fewer than `2k` characters left, reverse the first `k` characters and leave the rest as they are.
-
 
 1. **Initial Check**:
   - If `k` is 1, reversing single characters has no effect, so return the string as is.
