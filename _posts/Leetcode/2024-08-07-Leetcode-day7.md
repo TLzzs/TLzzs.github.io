@@ -85,11 +85,9 @@ Given a string `s` and an integer `k`, reverse the first `k` characters for ever
 
 - If there are fewer than `k` characters left, reverse all of them.
 
-1. **Initial Check**:
-  - If `k` is 1, reversing single characters has no effect, so return the string as is.
+1. **Initial Check**: If `k` is 1, reversing single characters has no effect, so return the string as is.
 
-2. **Convert String to Character Array**:
-  - Convert the string `s` into a character array `str` to allow in-place modifications.
+2. **Convert String to Character Array**: Convert the string `s` into a character array `str` to allow in-place modifications.
 
 3. **Loop to Process Every 2k Characters**:
   - Use a loop to iterate through the string in chunks of `2k`.
