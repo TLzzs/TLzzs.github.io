@@ -4,7 +4,7 @@ date: 2024-08-06 00:00:00
 categories: [Leetcode, Hashset, HashMap]
 tags: [HashSet, HashMap]
 ---
-#15. 3Sum
+## 15. 3Sum
 **LeetCode Problem:** [15. 3Sum](https://leetcode.com/problems/3sum/description/?envType=problem-list-v2&envId=m1hcfiks)
 
 
