@@ -262,6 +262,7 @@ class Solution {
 
 #### _Time Complexity_
 - O(n), where n is the length of the string s. We iterate over each character in the string once.
+
 #### _Space Complexity_
 O(n) in the worst case, where n is the length of the string. This happens when all characters are opening brackets, and they are all pushed onto the stack.
 

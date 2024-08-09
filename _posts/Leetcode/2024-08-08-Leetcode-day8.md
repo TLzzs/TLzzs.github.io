@@ -100,6 +100,7 @@ class Solution {
 - **O(N):** This means that the time it takes to complete the task increases linearly with the size of the input string. So if your 
 string is twice as long, the operations to reverse the words will take roughly twice as long. This is because we have to
 look at each character in the string a few times (to remove spaces, to reverse the whole string, and then to reverse each word).
+
 #### _Space Complexity_
 O(1): This tells us that the amount of additional memory (or space) needed doesn't depend on the size of the input string. We use only a tiny bit of extra space no matter how big the string is, just enough to hold a few temporary values while we rearrange the characters directly in the original string.
 Since the algorithm only uses a fixed amount of extra space regardless of the input size, the auxiliary space complexity is O(1).
@@ -129,6 +130,7 @@ Since the algorithm only uses a fixed amount of extra space regardless of the in
      }
      next[i] = j;
      ```
+     
 ### <u> Solution </u>
 
 Here's the Java implementation of the binary search algorithm:
@@ -172,5 +174,6 @@ class Solution {
 
 #### _Time Complexity_
 - O(n + m), which allows the search process to be significantly faster than the naive approach, especially for large texts and when the pattern contains repeated subpatterns.
+
 #### _Space Complexity_
 O(m), constrained primarily by the need to store the prefix table.
