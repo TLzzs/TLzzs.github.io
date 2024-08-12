@@ -1,5 +1,5 @@
 ---
-title: "Leetcode Day 11 | Binary Tree Preorder/Inorder/Postorder Traversal"
+title: "Leetcode Day 11 (part 1) | Binary Tree Preorder/Inorder/Postorder Traversal"
 date: 2024-08-11 00:00:00
 categories: [Leetcode, BinaryTree]
 tags: [BinaryTree]
