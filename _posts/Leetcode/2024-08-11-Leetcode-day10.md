@@ -7,19 +7,19 @@ tags: [Stack & Queue]
 ## 239. Sliding Window Maximum
 **LeetCode Problem:** [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/?envType=problem-list-v2&envId=mzikka8g)
 
-## Problem Statement
+### Problem Statement
 Given an array of integers nums and an integer k, representing the size of a sliding window, return an array of the 
 maximum values from each sliding window as it moves from left to right across the array.
 
-## Approach and Thought Process
+### Approach and Thought Process
 keep the queue.peek() to be the largest element in the queue
-### 3 step of thinking
+#### 3 step of thinking
 1. pop(value): where `value = num[i-k]` while the sliding window moves we need to pop out the first value, actually we check if the peek == the value we are popping out
    if not equal means we already filtered previously
 2. push(value): whenever we try to push(nums[i]), from the queue tail, remove all elements if that value is < the value we are pushing
 3. getMaxVal(): return the peek;
 
-### 4. Code Implementation
+#### Code Implementation
 
 ```java
 class Solution {

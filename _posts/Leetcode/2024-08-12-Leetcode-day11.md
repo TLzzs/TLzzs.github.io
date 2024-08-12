@@ -7,7 +7,7 @@ tags: [BinaryTree]
 ## 144. Binary Tree Preorder Traversal
 **LeetCode Problem:** [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/?envType=problem-list-v2&envId=mzt8n1h6)
 
-## Approach and Thought Process
+### Approach and Thought Process
 There are 2 approach **Recursive** and **Iteratively**
 
 ### Recursive
