@@ -1,5 +1,5 @@
 ---
-title: "Leetcode Day 9 | 239. Sliding Window Maximum、347. Top K Frequent Elements"
+title: "Leetcode Day 10 | 239. Sliding Window Maximum、347. Top K Frequent Elements"
 date: 2024-08-11 00:00:00
 categories: [Leetcode, Stack & Queue]
 tags: [Stack & Queue]
